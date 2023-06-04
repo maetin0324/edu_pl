@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "edu-pl"
+version = "0.1.0"
+description = ""
+authors = ["maetin <maetin0324@gmail.com>"]
+readme = "README.md"
+packages = [{include = "edu_pl"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.96.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+openai = "^0.27.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
